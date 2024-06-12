@@ -16,7 +16,7 @@
   }
   .about_content_div h1 {
     width: auto;
-    height: 90px;
+    height: auto;
   }
   .about_content_div {
     height: 500px;
@@ -24,9 +24,57 @@
   .about_content_div p {
     width: auto;
     height: 100px;
+    margin-top: 4%;
   }
   .our_story_logos {
     width: 100%;
+  }
+  .review_card_container {
+    padding: 0px 10px;
+  }
+  .review_card img {
+    width: 210px;
+    height: 360px;
+  }
+  .blank_section {
+    width: auto;
+    height: 150px;
+  }
+  .footer .form-inline .form-control {
+    width: 150px;
+    flex-grow: 1;
+  }
+}
+@media (max-width: 820px) {
+  .review_card {
+    margin: 4% 0;
+  }
+  .review_card img {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .review_card_container {
+    padding: 0px 20px;
+  }
+  .review_card_text h5 {
+    font-size: 30px;
+  }
+  .review_card_text h6 {
+    font-size: 20px;
+    padding-top: 6px;
+  }
+  .apply_div2 h1 {
+    font-size: 25px;
+  }
+  .apply_section::before {
+    height: 430px;
+  }
+  .apply_div1_container {
+    height: 430px;
+  }
+  .apply_div2_container {
+    height: 430px;
   }
 }
 @media (max-width: 768px) {
@@ -77,6 +125,21 @@
   .about_img img {
     height: 500px;
   }
+  .review_card_container {
+    padding: 0px 10px;
+  }
+  .review_card_text {
+    margin-top: 6%;
+  }
+  .apply_section::before {
+    height: 350px;
+  }
+  .apply_div1_container {
+    height: 330px;
+  }
+  .apply_div2_container {
+    height: 330px;
+  }
 }
 @media (max-width: 767px) {
   .home_img {
@@ -111,6 +174,27 @@
   .about_img img {
     height: 400px;
   }
+  .apply_section::before {
+    height: 500px;
+  }
+  .apply_div1_container {
+    height: 350px;
+  }
+  .apply_div2_container {
+    height: 100px;
+  }
+  .footer .text-md-right {
+    text-align: left !important;
+  }
+  .footer .form-inline {
+    flex-direction: column;
+  }
+  .footer .form-inline .form-control {
+    margin-bottom: 10px;
+  }
+  .footer .form-inline .btn {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 360px) {
@@ -127,5 +211,25 @@
   .home_text {
     font-size: 32px;
     font-weight: 500;
+  }
+  .review_card img {
+    width: 300px;
+    height: 350px;
+  }
+  .review_card_text h5 {
+    font-size: 26px;
+  }
+  .review_card_text h6 {
+    font-size: 20px;
+  }
+  .apply_section::before {
+    height: 450px;
+  }
+  .apply_div1_container {
+    height: 300px;
+  }
+
+  .apply_div2 h1 {
+    font-size: 23px;
   }
 }

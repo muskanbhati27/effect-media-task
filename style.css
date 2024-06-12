@@ -2,14 +2,17 @@
   margin: 0;
   top: 0;
 }
+
 /* Navbar & Home section  */
 .home_img {
-  background: url("image/20bff1046ecd5cdb69378a4f5b5add5b.jpeg");
+  background: url("/image/20bff1046ecd5cdb69378a4f5b5add5b.jpeg");
   background-size: cover;
   width: 100%;
   height: 672px;
   background-repeat: no-repeat;
+  position: relative;
 }
+
 .home_img::before {
   position: absolute;
   width: 100%;
@@ -17,70 +20,69 @@
   content: "";
   background: linear-gradient(10deg, #1c1c1c, transparent);
 }
+
 .home_navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: end;
   padding: 20px;
   height: 96px;
 }
+
 .navbar_logo {
   width: 308.83px;
   height: 56px;
 }
+
 .navbar_ul {
-  width: 500px;
-  height: 46px;
-  gap: 24px;
-  margin-left: 40%;
-  border: 2px solid red;
-  justify-content: end;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
 }
+
 .navbar_li {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  margin-left: 10px;
 }
+
 .navbar_li a {
   font-weight: 500;
   font-size: 16px;
   line-height: 21.79px;
   color: #3c3c3c;
 }
+
 .navbar_button {
-  width: Hug (147px) px;
-  height: Hug (46px) px;
-  padding: 12px 20px 12px 20px;
-  gap: 10px;
-  border-radius: 12px 0px 0px 0px;
-  opacity: 0px;
+  padding: 12px 20px;
+  border-radius: 12px;
   background-color: #14c69e;
   color: white;
   font-size: 16px;
   font-weight: 700;
-  line-height: 21.79px;
-  text-align: left;
 }
+
 .home_text_div {
-  position: relative;
+  position: absolute;
   color: white;
-  height: 141px;
-  width: 938px fixed;
-  gap: 24px;
-  top: 417px;
-  left: 108px;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
 }
+
 .home_text {
   font-size: 60px;
   font-weight: 700;
   line-height: 90px;
   letter-spacing: 4%;
 }
+
 .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2830,30,30,0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   border: 2px solid red;
 }
-/* Navbar & Home section  */
+
 /* Our story  section*/
 .our_story_img {
   width: 100%;
@@ -193,3 +195,134 @@
   color: #3c3c3c;
 }
 /* review section */
+/* apply section */
+
+.apply_section {
+  background-size: cover;
+  width: 100%;
+  height: 494;
+  background-repeat: no-repeat;
+  padding-left: 0;
+}
+.apply_section::before {
+  position: absolute;
+  width: 100%;
+  height: 494px;
+  content: "";
+  background: linear-gradient(1deg, #003087, #0070e1);
+}
+.apply_div1_container {
+  height: 494px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  padding-left: 10%;
+}
+.apply_div1 {
+  color: white;
+  margin: 80px 0;
+}
+.apply_div1 h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.apply_div1 ul {
+  padding-left: 6%;
+  padding-top: 6%;
+}
+.apply_div1 li {
+  padding-top: 3%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.79px;
+  text-align: left;
+}
+.apply_div2_container {
+  height: 494px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.apply_div2 h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+}
+.apply_div2 button {
+  width: 68%;
+  height: 38%;
+  margin-top: 2%;
+  border-radius: 12px;
+  background-color: #14c69e;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+/* apply section */
+/* blank section */
+.blank_section {
+  width: 1280px;
+  height: 280px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: white;
+  color: white;
+}
+/* blank section */
+/* footer section */
+.footer {
+  background-color: #002147;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer h5 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .form-inline {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.footer .form-inline .form-control {
+  width: auto;
+  flex-grow: 1;
+}
+
+.footer .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer p {
+  margin-bottom: 5px;
+}
+/* footer section */
