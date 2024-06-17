@@ -41,7 +41,7 @@
     height: 150px;
   }
   .footer .form-inline .form-control {
-    width: 150px;
+    width: 120px;
     flex-grow: 1;
   }
 }
@@ -187,13 +187,18 @@
     text-align: left !important;
   }
   .footer .form-inline {
-    flex-direction: column;
+    flex-direction: row;
   }
   .footer .form-inline .form-control {
     margin-bottom: 10px;
   }
   .footer .form-inline .btn {
     margin-left: 0;
+  }
+  .btn_submit {
+    right: 8px;
+
+    top: -5px;
   }
 }
 
@@ -231,5 +236,9 @@
 
   .apply_div2 h1 {
     font-size: 23px;
+  }
+  .navbar_logo {
+    width: 160px;
+    height: 37px;
   }
 }
